@@ -15,7 +15,7 @@
             "database": {
                 "host": "localhost",
                 "port": "27017",
-                "database": "test",
+                "database": "DATABASE_NAME",
                 "dialect": "mongodb"
             },
             "server": {
