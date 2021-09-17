@@ -6,7 +6,7 @@
         "start": "p4rm run"
     },
     "dependencies": {
-        "@p4/platform": "0.8.0"
+        "@p4/platform": "0.8.1"
     },
     "config": {
         "environment": "PRODUCTION",
