@@ -3,10 +3,11 @@
     "version": "1.0.0",
     "description": "project",
     "scripts": {
-        "start": "p4rm run"
+        "start": "justaos run",
+        "start:dev": "justaos-dev run"
     },
     "dependencies": {
-        "@p4/platform": "0.8.4"
+        "@os/platform": "1.0.2"
     },
     "config": {
         "environment": "PRODUCTION",
@@ -34,8 +35,9 @@
             "@p4/user-management": {},
             "@p4/security": {},
             "@p4/core": {
-                "uiComponentLibrary": "https://unpkg.com/@p4rm/ui@1.0.6/dist/p4rm-ui/p4rm-ui.esm.js",
-                "uiTheme": "https://unpkg.com/@p4rm/ui@1.0.6/dist/p4rm-ui/styles/theme.css",
+                "product": {
+                    "name": "justaOS"
+                },
                 "email": {
                     "sender": {
                         "host": "smtp.office365.com",
