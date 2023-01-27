@@ -1,0 +1,28 @@
+{
+  "name": "My Project",
+  "environment": "PRODUCTION",
+  "loggerLevel": "info",
+  "main": "file:///D:/development/justaos/@os/os/mod.ts",
+  "kernel": {
+    "license": "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",
+    "server": {
+      "port": 8080,
+      "pages": {
+        "404": "404.html"
+      }
+    },
+    "database": {
+      "dialect": "mongodb",
+      "host": "127.0.0.1",
+      "port": "27017",
+      "database": "my-project-database"
+    }
+  },
+  "properties": {
+    "brand.name": "My Project"
+  },
+  "programs": {
+    "system-core": {},
+    "platform": {}
+  }
+}
