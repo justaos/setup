@@ -2,9 +2,8 @@
   "name": "My Project",
   "environment": "PRODUCTION",
   "loggerLevel": "info",
-  "main": "file:///D:/development/justaos/@os/os/mod.ts",
   "kernel": {
-    "license": "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",
+    "license": "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",
     "server": {
       "port": 8080,
       "pages": {
