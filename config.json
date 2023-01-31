@@ -3,7 +3,7 @@
   "environment": "PRODUCTION",
   "loggerLevel": "info",
   "kernel": {
-    "license": "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",
+    "license": "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",
     "server": {
       "port": 8080,
       "pages": {

@@ -1,15 +1,18 @@
 import OS from 'https://raw.githubusercontent.com/justaos/os/v2.2.0/os/mod.ts';
 
 import config from './config.json' assert { type: 'json' };
-import {FileUtils} from "https://raw.githubusercontent.com/justaos/kernel/1.5.1/core/mod.ts";
+import FileUtils from "https://deno.land/x/justaos_utils@1.3.0/file-utils/mod.ts";
 
-if (!config.programs.platform.jwtKey) {
-    config.programs.platform.jwtKey = crypto.subtle.generateKey(
+if (!config.setupComplete) {
+    console.log("performing initial setup")
+    config.setupComplete = true;
+    const key = await crypto.subtle.generateKey(
         { name: 'HMAC', hash: 'SHA-512' },
         true,
         ['sign', 'verify']
     )
-    FileUtils.writeJsonFileSync('./config.json', config);
+    config.programs.platform.jwtKey = await crypto.subtle.exportKey("jwk", key);
+    FileUtils.writeTextFileSync('./config.json', JSON.stringify(config, null, 4));
 }
 
 new OS(Deno.cwd()).run();
