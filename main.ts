@@ -1,4 +1,4 @@
-import OS from 'https://raw.githubusercontent.com/justaos/os/v2.1.4/os/mod.ts';
+import OS from 'https://raw.githubusercontent.com/justaos/os/v2.2.0/os/mod.ts';
 
 import config from './config.json' assert { type: 'json' };
 import {FileUtils} from "https://raw.githubusercontent.com/justaos/kernel/1.5.1/core/mod.ts";
