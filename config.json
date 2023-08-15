@@ -10,12 +10,7 @@
         "404": "404.html"
       }
     },
-    "database": {
-      "dialect": "mongodb",
-      "host": "127.0.0.1",
-      "port": "27017",
-      "database": "my-project-database"
-    }
+    "database": "mongodb://127.0.0.1:27017/my-project-database"
   },
   "properties": {
     "brand.name": "My Project"
